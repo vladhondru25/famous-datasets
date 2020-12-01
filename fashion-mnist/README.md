@@ -1,10 +1,15 @@
 # Fashion MNIST
 
-The implementation of an adapted LeNet5 [1] and applied to the Fashion MNIST dataset in PyTorch.
+The implementation of an adapted LeNet5 [1] and applied to the Fashion MNIST dataset in PyTorch. Two Tensorflow implementations were included, the difference being in the method of training the model (simpler version using Keras way with compile and fit, the other more advanced with GradientTape).
 
 ## How to run
 
 The code is written as a Jupyer Notebook. It can pe run locally if [JupyterLab](https://jupyter.org/) in installed. In order to run it, just run the cells in their respective order. 
+Note: Due to some issues ([see](https://github.com/dmlc/xgboost/issues/1715)), the Tensorflow notebooks contains the following block of code (uncomment if you got the same error): \
+<code>
+    import os \
+    os.environ['KMP_DUPLICATE_LIB_OK']='True'
+</code>
 
 ### Recommendation
 
